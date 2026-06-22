@@ -6,7 +6,7 @@
 
 | Ferramenta | Versão | Observação |
 |---|---|---|
-| PHP | 8.4 (mínimo 8.2) | extensões: `pdo_sqlite`, `mbstring`, `openssl`, `curl`, `fileinfo`, `zip`, `gd`, `bcmath` |
+| PHP | 8.4 | extensões: `pdo_sqlite`, `mbstring`, `openssl`, `curl`, `fileinfo`, `zip`, `gd`, `bcmath` |
 | Composer | 2.x | nesta máquina, via `composer.phar` na raiz |
 | SQLite | — | banco padrão (zero configuração) |
 | Redis | opcional | usado pelo cache de inventário; cai no store default se ausente |

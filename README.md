@@ -403,7 +403,7 @@ php vendor/pestphp/pest/bin/pest
 
 Estado atual: **28 testes / 77 asserts** verdes, PHPStan nível 8 sem erros, Pint
 limpo. As três checagens rodam no **CI** ([`.github/workflows/ci.yml`](.github/workflows/ci.yml))
-em PHP 8.2/8.3/8.4 a cada push e PR.
+em PHP 8.4 a cada push e PR.
 
 ---
 
