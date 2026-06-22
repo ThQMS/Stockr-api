@@ -1,0 +1,15 @@
+<?php
+
+namespace SimpleSoftwareIO\QrCode;
+
+class Generator
+{
+    /**
+     * Upstream declares the return as `void|Illuminate\Support\HtmlString|string`
+     * with no leading backslash, so PHPStan resolves HtmlString inside the
+     * package namespace as a phantom class. At runtime the SVG writer yields a
+     * Stringable value; for our adapter a plain string return type is exact and
+     * lets the (string) conversion type-check cleanly.
+     */
+    public function generate(string $text, ?string $filename = null): string;
+}

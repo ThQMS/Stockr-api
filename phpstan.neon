@@ -1,0 +1,18 @@
+includes:
+    - vendor/larastan/larastan/extension.neon
+
+parameters:
+    level: 8
+
+    paths:
+        - src
+        - app
+
+    # Corrects a mis-resolved return type in simplesoftwareio/simple-qrcode.
+    stubFiles:
+        - stubs/Generator.stub
+
+    # Eloquent models are thin read-models; their magic property access is
+    # already described via @property docblocks.
+    ignoreErrors:
+        - identifier: missingType.generics
